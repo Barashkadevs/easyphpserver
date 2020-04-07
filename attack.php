@@ -87,7 +87,7 @@ socket_sendto($this->socket, $msg, strlen($msg) * 500, MSG_EOF, $this->ip, $this
 class Web{
 public $address;
 public $user = "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36";
-public $request = ["Gets" => [], "to" => str_repeat("ban", 800), "Unknown" => true, "acceped" => true];
+public $request = ["Gets" => null];
 public function __construct(String $ip) {
 $this->address = $ip;
 } 
